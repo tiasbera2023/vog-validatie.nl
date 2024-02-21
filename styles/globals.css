@@ -1,11 +1,20 @@
 body{
   margin: 0px;
   padding: 0px;
+  font-family: Open Sans Hebrew !important;
 }
 
 p{
   margin:0px;
 }
+
+@font-face {
+  font-family: Open Sans Hebrew;
+  font-style: normal;
+  /* src: url("/assets/font/MozaicGEO-Black.otf"); */
+  src: url("../public/assests/font/OpenSansHebrew-Regular.otf");
+}
+
 
 .container {
   padding-right: 15px;
@@ -26,6 +35,10 @@ box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5)
 font-size: 18px;
 font-weight: 700;
 color: #002344;
+}
+#header h4 span{
+  display: flex;
+  margin-top: 5px;
 }
 
 .Menu-icon{
@@ -298,7 +311,7 @@ color: #4890D3;
   font-weight: 700;
   color: #ffffff !important;
   text-align: center;
-  padding: 15px 0px;
+  padding: 10px 0px 18px 0px;
   margin-top: 50px;
 }
 
@@ -337,6 +350,7 @@ color: #4890D3;
 position: relative;
 color: #161D25 !important;
 background: #EAF4FD;
+font-weight: 400 !important;
 }
 
 .s5-card img{
