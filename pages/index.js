@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import security from "../public/assests/images/security.svg"
 import banner from "../public/assests/images/VOG_nl.svg"
 import card1 from "../public/assests/images/card1.svg"
@@ -27,8 +28,8 @@ export default function Home() {
             <div>
           <p className="home-text-1">Hét online VOG-Loket</p>
           <h3 className="home-text-2">Snel én betrouwbaar een VOG?</h3>
-          <p className="home-btn-1">VOG nu aanvragen</p>
-          <p className="security-text"><Image src={security}/><span>Veilig online aangevraagd</span></p>
+          <Link href={"/request"}><p className="home-btn-1"><span>VOG nu aanvragen</span></p></Link>
+          <p className="security-text-home"><Image src={security}/><span>Veilig online aangevraagd</span></p>
             </div>
           <div className="banner-img-box">
             <Image src={banner} className="banner-img"/>
