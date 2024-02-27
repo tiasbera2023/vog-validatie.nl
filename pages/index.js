@@ -37,8 +37,8 @@ export default function Home() {
         </div>
       </section>
       <section id="section2" className="container">
-        <h3>Een VOG aanvragen in drie <br/> simpele stappen</h3>
-        <p className="sec2-subhead">Een VOG aanvragen in drie simpele stappen</p>
+        <h3 className="sec2-h3">Een VOG aanvragen in drie <br/> simpele stappen</h3>
+        <p className="sec2-subhead sec2-p">Een VOG aanvragen in drie simpele stappen</p>
         <div className="card-container">
         <div className="card">
         <Image src={card1}/>

@@ -6,7 +6,7 @@ import menu from "../public/assests/images/Menu.svg"
 
 export default function Home() {
   return (
-    <>
+    <> 
       <main>
       <section id="header">
         <div className="container header">

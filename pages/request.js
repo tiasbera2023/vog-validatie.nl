@@ -5,7 +5,8 @@ import step1 from "../public/assests/images/step1.svg"
 import step2 from "../public/assests/images/step2.svg"
 import step3 from "../public/assests/images/step3.svg"
 import step4 from "../public/assests/images/step4.svg"
-import banner from "../public/assests/images/VOG_nl.svg"
+import banner from "../public/assests/images/Union.svg"
+import book from "../public/assests/images/book.svg"
 import outlineArrow from "../public/assests/images/outline-arrow.svg"
 
 
@@ -20,9 +21,10 @@ export default function Request() {
       </Head>
       <main>
       <section id="section1">
-        <div className="container request-section-box">
+        <div className="request-section-box">
+        <div className="req-1-box">
             <div className="request-1">
-                <h3 style={{marginTop:"0px"}}>Stappen VOG aanvraag</h3>
+                <h3 className="req-1-head">Stappen VOG aanvraag</h3>
                 <div className="request-1-left">
                 <div className="step-indicator">
                     <Image src={step1}/>
@@ -35,7 +37,7 @@ export default function Request() {
                 </div>
                 <div className="step-content">
                 <div>
-                    <h3>Invullen gegevens</h3>
+                    <h3 className="fw-bold">Invullen gegevens</h3>
                     <p>Na de vragen volledig ingevuld te hebben, betaalt u een bedrag vanaf €12,50.</p>
                 </div>
                 <div>
@@ -60,8 +62,11 @@ uw huisadres..</p>
                 </div>
                 </div>
                 </div>
-                {/* <Image className="request-1-img" src={banner}/> */}
+                <Image className="request-1-img" src={banner}/>
+                <Image className="request-1-imgbook" src={book}/>
             </div>
+            </div>
+            <div className="req-2-box">
             <div className="request-2">
             <p className="security-text"><Image src={security}/><span>Veilig online aangevraagd</span></p>
             <div className="form-container">
@@ -90,26 +95,30 @@ uw huisadres..</p>
                     </div>
                     <div>
                         <label>Weet u op welke profielen u gescreend moet worden?</label>
-                        <div className="radio-label-box"><input className="form-radio-btn" type="radio"/><span>Ja, (ik weet het zeker)</span></div>
-                        <div className="radio-label-box"><input className="form-radio-btn" type="radio"/><span>Nee, (ik twijfel)</span></div>
+                        <div className="radio-label-box"><input name="1" className="form-radio-btn" type="radio"/><span>Ja, (ik weet het zeker)</span></div>
+                        <div className="radio-label-box"><input name="1" className="form-radio-btn" type="radio"/><span>Nee, (ik twijfel)</span></div>
                     </div>
                     <div>
                         <label>Selecteer screeningsprofiel:</label>
                         
-                        <div className="radio-label-box"><input className="form-radio-btn" type="radio"/> <span>Specifiek screeningsprofiel*</span></div>
-                        <div className="radio-label-box"><input className="form-radio-btn" type="radio"/> <span>Algemeen screeningsprofiel*</span></div>
+                        <div className="radio-label-box"><input name="2" className="form-radio-btn" type="radio"/> <span>Specifiek screeningsprofiel*</span></div>
+                        <div className="radio-label-box"><input name="2" className="form-radio-btn" type="radio"/> <span>Algemeen screeningsprofiel*</span></div>
                     
                     </div>
                     <div>
                         <label>Zijn er bijzondere omstandigheden m.b.t. de aanvraag?</label>
-                        <div className="radio-label-box"><input className="form-radio-btn" type="radio"/> <span>ja</span></div>
-                        <div className="radio-label-box"><input className="form-radio-btn" type="radio"/> <span>Nee</span></div>
+                        <div className="radio-label-box"><input name="2" className="form-radio-btn" type="radio"/> <span>ja</span></div>
+                        <div className="radio-label-box"><input name="2" className="form-radio-btn" type="radio"/> <span>Nee</span></div>
                     </div>
                     <div>
                         <label>Akkoordverklaring online aanvraag VOG</label>
-                        <div className="radio-label-box"><input type="checkbox"/><span>Ik ga akkoord met de algemene voorwaarden</span></div>
+                        <div className="checkbox-label-box"><input type="checkbox" className="form-check-box"/><span className="checkbox-label">Ik ga akkoord met de algemene voorwaarden</span></div>
+                    </div>
+                    <div>
+                        <button className="req-form-btn">Betalen & Verzenden</button>
                     </div>
                 </form>
+            </div>
             </div>
             </div>
         </div>
