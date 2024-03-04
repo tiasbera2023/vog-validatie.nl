@@ -101,7 +101,7 @@ export default function Home() {
             <h4 className="position-text">Manager</h4>
           </div>
           <div className="s5-card"> 
-            <p> 
+            <p>  
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             <Image src={user1}/>
             </p>
@@ -121,7 +121,9 @@ export default function Home() {
       <section id="section6" className="container">
         <p>Al meer dan 1000<br/> organisaties vertrouwen 
         <br/>op VOG-validatie.nl</p>
+        <div className="home-sec6-img">
         <Image src={companyList}/>
+        </div>
       </section>
       <section id="section7" className="container">
       <h3>Meest gestelde vragen</h3>

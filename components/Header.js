@@ -13,10 +13,10 @@ export default function Home() {
         <div className="container header">
         <Link href={"/"}><Image src={Logo}/></Link>
         <div className="header-div">
-        <h4 >VOG nu aanvragen <span><Image src={arrow}/></span></h4>
+        <h4 className="sm-hide">VOG nu aanvragen <span><Image src={arrow}/></span></h4>
         <div className="Menu-icon">
         <Image src={menu}/>
-        <span>Menu</span>
+        <span className="sm-hide">Menu</span>
         </div>
         </div>
         </div>
